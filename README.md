@@ -1,4 +1,4 @@
-# Lama Dev School Management Dashboard
+# Pattarapol School Management Project
 
 ## Getting Started
 
@@ -20,7 +20,10 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 ## Learn More
 
+This project was created to learn Next.js and TypeScript, inspired by Lama Dev.
+
 To learn more about Next.js, take a look at the following resources:
 
-- [Lama Dev Youtube Channel](https://youtube.com/lamadev) 
-- [Next.js](https://nextjs.org/learn)
+- Lama Dev Youtube Channel [https://www.youtube.com/@LamaDev]
+- Next.js Documentation [https://nextjs.org/docs]
+- Next.js Learn [https://nextjs.org/learn]
