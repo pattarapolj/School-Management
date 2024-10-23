@@ -16,9 +16,9 @@ const config: Config = {
       colors:{
         sky: "#C3EBFA",
         skyLight: "#EDF9FD",
-        purple: "#CFCEFF",
+        purpleTheme: "#CFCEFF",
         purpleLight: "#F1F0FF",
-        yellow: "#FAE27C",
+        yellowTheme: "#FAE27C",
         yellowLight: "#FEFCE8",
       }
     },
