@@ -1,5 +1,6 @@
 import AttendanceChart from "@/components/AttendanceChart";
 import CountChart from "@/components/CountChart";
+import FinanceChart from "@/components/FinanceChart";
 import UserCard from "@/components/UserCard";
 
 const AdminPage: React.FC = () => {
@@ -27,7 +28,7 @@ const AdminPage: React.FC = () => {
                 </div>
                 {/* Bottom Chart */}
                 <div className="w-full h-[500px]">
-
+                    <FinanceChart />
                 </div>
 
             </div>

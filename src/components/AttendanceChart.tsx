@@ -46,9 +46,18 @@ const AttendanceChart: React.FC = () => {
                     data={data}
                     barSize={20}
                 >
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip contentStyle={{borderRadius:"10px", borderColor:"lightgray", background: "#F7FCFE"}}/>
+                    <XAxis
+                        dataKey="name"
+                        axisLine={false}
+                        tick={{ fill: "#d1d5db" }}
+                        tickLine={false}
+                    />
+                    <YAxis
+                        axisLine={false}
+                        tick={{ fill: "#d1d5db" }}
+                        tickLine={false} 
+                    />
+                    <Tooltip contentStyle={{ borderRadius: "10px", borderColor: "lightgray", background: "#F7FCFE" }} />
                     <Legend align='left' verticalAlign='top' wrapperStyle={{ paddingTop: "20px", paddingBottom: "40px" }} />
                     <Bar
                         dataKey="Present"
