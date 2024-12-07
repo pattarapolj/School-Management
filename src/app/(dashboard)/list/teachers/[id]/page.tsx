@@ -1,5 +1,6 @@
 import Announcements from "@/components/Announcements"
 import BigCalendar from "@/components/BigCalendar"
+import FormModal from "@/components/FormModal"
 import Performance from "@/components/Performance"
 import Image from "next/image"
 import Link from "next/link"
@@ -21,7 +22,23 @@ const SingleTeacherPage = () => {
                                 className="w-36 h-36 rounded-full object-cover" />
                         </div>
                         <div className="w-2/3 flex flex-col justify-between gap-4">
-                            <h1 className="text-xl font-semibold">Pattarapol Jimongkolkul</h1>
+                            <div className="flex items-center gap-4">
+                                <h1 className="text-xl font-semibold">Pattarapol Jimongkolkul</h1>
+                                <FormModal table="teacher" type="update" data={{
+                                    id: 1,
+                                    username: "pattarapol",
+                                    email: "phaipattarapol.13@gmail.com",
+                                    password: "0123456789",
+                                    firstName: "Pattarapol",
+                                    lastName: "Jimongkolkul",
+                                    phone: "0123456789",
+                                    address: "123/456 Bangkok",
+                                    bloodType: "O",
+                                    birthday: "1999-12-12",
+                                    sex: "male",
+                                    img: "https://images.pexels.com/photos/29464016/pexels-photo-29464016/free-photo-of-man-in-jacket-posing-under-urban-bridge.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                }} />
+                            </div>
                             <p className="text-sm text-gra-500">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             </p>
@@ -87,18 +104,18 @@ const SingleTeacherPage = () => {
             </div>
             {/* RIGHT */}
             <div className="w-full xl:w-1/3 flex flex-col gap-4">
-            <div className="bg-white p-4 rounded-md">
-                <h1 className="text-xl font-semibold">Shortcuts</h1>
-                <div className="mt-4 flex gap-4 flex-wrap text-xs text-gray-500">
-                    <Link className="p-3 rounded-md bg-skyLight" href='/'>Teacher's Classes</Link>
-                    <Link className="p-3 rounded-md bg-purpleLight" href='/'>Teacher's Students</Link>
-                    <Link className="p-3 rounded-md bg-yellowLight" href='/'>Teacher's Lessons</Link>
-                    <Link className="p-3 rounded-md bg-pink-50" href='/'>Teacher's Exams</Link>
-                    <Link className="p-3 rounded-md bg-skyLight" href='/'>Teacher's Assignments</Link>
+                <div className="bg-white p-4 rounded-md">
+                    <h1 className="text-xl font-semibold">Shortcuts</h1>
+                    <div className="mt-4 flex gap-4 flex-wrap text-xs text-gray-500">
+                        <Link className="p-3 rounded-md bg-skyLight" href='/'>Teacher's Classes</Link>
+                        <Link className="p-3 rounded-md bg-purpleLight" href='/'>Teacher's Students</Link>
+                        <Link className="p-3 rounded-md bg-yellowLight" href='/'>Teacher's Lessons</Link>
+                        <Link className="p-3 rounded-md bg-pink-50" href='/'>Teacher's Exams</Link>
+                        <Link className="p-3 rounded-md bg-skyLight" href='/'>Teacher's Assignments</Link>
+                    </div>
                 </div>
-            </div>
-            <Performance />
-            <Announcements />
+                <Performance />
+                <Announcements />
 
             </div>
         </div>
